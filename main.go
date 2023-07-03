@@ -22,14 +22,11 @@ type ResourceGroup struct {
 
 func setTerraformVariables() (map[string]string, error) {
     // Getting enVars from environment variables
-    // ARM_CLIENT_ID := os.Getenv("AZURE_CLIENT_ID")
-    // ARM_CLIENT_SECRET := os.Getenv("AZURE_CLIENT_SECRET")
-    // ARM_TENANT_ID := os.Getenv("AZURE_TENANT_ID")
-    // ARM_SUBSCRIPTION_ID := os.Getenv("AZURE_SUBSCRIPTION_ID")
-    ARM_CLIENT_ID := os.Getenv("ARM_CLIENT")
-    ARM_CLIENT_SECRET := os.Getenv("ARM_CLIENT_SECRET_ID")
-    ARM_TENANT_ID := os.Getenv("ARM_TENANT")
-    ARM_SUBSCRIPTION_ID := os.Getenv("ARM_SUBSCRIPTION")
+    ARM_CLIENT_ID := os.Getenv("AZURE_CLIENT_ID")
+    ARM_CLIENT_SECRET := os.Getenv("AZURE_CLIENT_SECRET")
+    ARM_TENANT_ID := os.Getenv("AZURE_TENANT_ID")
+    ARM_SUBSCRIPTION_ID := os.Getenv("AZURE_SUBSCRIPTION_ID")
+
 
     // Print the exported values
     fmt.Println("Exported Values:")
